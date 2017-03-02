@@ -8,7 +8,6 @@ class Mtce extends Application {
         $this->page(1);
     }
 
-
     // Show a single page of todo items
     private function show_page($tasks)
     {
@@ -27,7 +26,6 @@ class Mtce extends Application {
         $this->data['pagebody'] = 'itemlist';
         $this->render();
     }
-
 
     // Extract & handle a page of items, defaulting to the beginning
     function page($num = 1)
@@ -62,6 +60,4 @@ class Mtce extends Application {
         );
         return $this->parser->parse('itemnav',$parms,true);
     }
-
-
 }
